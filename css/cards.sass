@@ -1,0 +1,88 @@
+.container
+	position: fixed
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	display: flex
+	display: -webkit-flex
+	justify-content: center
+	align-items: center
+	animation-name: move
+	animation-iteration-count: infinite
+	animation-duration: 5s
+	animation-timing-function: linear
+
+
+
+
+.orb
+	position: fixed
+	width: 60%
+	height: 50vh
+	border-top-style: solid
+	border-top-color: #ffffff
+	border-top-width: 5px
+	background: url(../images/grade.png) no-repeat
+	background-size: cover
+	text-align: center
+	box-shadow: 0px 10px 30px 0px #FA9470
+	// NOTE: flex
+	display: flex
+	flex-flow: column
+	justify-content: center
+	align-items: center
+	// NOTE: animation
+	animation-name: flow
+	animation-delay: 0.5s
+	animation-fill-mode: forwards
+	animation-duration: 0.5s
+	animation-timing-function: ease-in-out
+	opacity: 0
+
+.orb:hover
+	width: 62%
+	height: 52vh
+	box-shadow: 0px 15px 60px 0px #FA9470
+
+#randomStrategy
+	font-family: sans-serif
+	padding: 10px
+	text-decoration: none
+	color: #ffffff
+	font-weight: 900
+	text-align: center
+	width: 90%
+	height: auto
+	padding-left: 5%
+	padding-right: 5%
+	font-size: 2em
+	animation-name: flow
+	animation-delay: 2s
+ 	animation-fill-mode: forwards
+ 	animation-duration: 1s
+ 	animation-timing-function: ease-in-out
+ 	opacity: 0
+
+.button
+	font-size: 1em
+	background: #fafafa
+	width: 150px
+	height: 40px
+	border-radius: 5px
+	color: #000000
+	text-decoration: none
+	font-family: sans-serif
+	font-weight: 900
+
+@keyframes flow
+	0%
+		opacity: 0
+		transform: translateY(50px)
+	50%
+		opacity: 1
+
+	100%
+		opacity: 1
+		transform: translateY(0px)
