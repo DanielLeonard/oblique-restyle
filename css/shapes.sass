@@ -11,8 +11,23 @@
   border-top-right-radius: 26px
   border: 6px solid #000000
   border-bottom: 0
-  transform: translateY(10vh)
+  margin-bottom: 26px
+
+.semi-wrapper
+  position: absolute
+  margin-top: 10vh
   margin-left: 40%
+  animation-name: spinnerv2
+  animation-duration: 2s
+  animation-iteration-count: infinite
+  animation-direction: normal
+
+@keyframes spinnerv2
+    0%
+      transform: rotate(0deg)
+
+    100%
+      transform: rotate(-360deg)
 
 
 .circle
@@ -21,8 +36,23 @@
   background: #000000
   border-radius: 50%
   margin-bottom: 1em
-  transform: translateY(40vh)
+
+.circle-wrapper
+  position: absolute
+  margin-top: 30vh
   margin-left: 10%
+  animation-name: slideup
+  animation-duration: 2s
+  animation-iteration-count: infinite
+  animation-direction: normal
+
+@keyframes slideup
+    0%
+      transform: translateY(0)
+    50%
+      transform: translateY(40px)
+    100%
+      transform: translateY(0)
 
 .slant
   width: 40px
@@ -47,19 +77,25 @@
     width: 40px
     height: 8px
     background: #000000
-    margin-bottom: 1em
-    transform: translateY(70vh)
-    margin-left: 70%
+    margin: 1em
 
+.line-wrapper
+  position: absolute
+  margin-top: 85vh
+  margin-left: 70%
+  animation-name: spinv2
+  animation-duration: 2s
+  animation-iteration-count: infinite
+  animation-direction: normal
 
-
-@keyframes slide
+@keyframes spinv2
     0%
-      transform: translateX(0)
+      transform: rotate(0deg)
     50%
-      transform: translateX(20px)
+      transform: rotate(-90deg)
     100%
-      transform: translateX(0)
+      transform: rotate(0deg)
+
 
 
 .square
@@ -67,5 +103,21 @@
     height: 40px
     background: black
     margin-bottom: 1em
-    transform: translateY(65vh)
-    margin-left: 25%
+    position: absolute
+
+.square-wrapper
+  position: absolute
+  margin-top: 80vh
+  margin-left: 25%
+  animation-name: slideside
+  animation-duration: 2s
+  animation-iteration-count: infinite
+  animation-direction: normal
+
+@keyframes slideside
+    0%
+      transform: translateX(0)
+    50%
+      transform: translateX(40px)
+    100%
+      transform: translateX(0)
